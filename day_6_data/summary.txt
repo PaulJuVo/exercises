@@ -1,0 +1,3 @@
+Anzahl an Zeilen mit fehlenden Werten: 6 
+Durchschnittliches Gehalt: 52666.67 
+Durchschnittliches Alter: 26.23 
