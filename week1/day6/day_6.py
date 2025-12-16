@@ -24,7 +24,7 @@
 import csv
 from collections import defaultdict
 import pprint as pp
-import day_6_logger 
+import week1.day6.day_6_logger as day_6_logger 
 from typing import Any, Callable, TypeVar
 import argparse
 

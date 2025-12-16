@@ -10,7 +10,7 @@ Füge Logging hinzu (import logging) und schreibe Fehler in eine Datei.
 '''
 import logging
 
-from logs.logger_decorator import log_calls
+from day_5_logs.logger_decorator import log_calls
 
 logger = logging.getLogger(__name__)
 

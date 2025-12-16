@@ -1,0 +1,23 @@
+2025-12-16 13:54:13,867 - day_5_logs.logger_decorator - INFO     - → test gestartet mit args=(), kwargs={}
+2025-12-16 13:54:13,867 - day_5_logs.logger_decorator - INFO     - ← test beendet, Ergebnis=None
+2025-12-16 13:54:13,867 - day_5_logs.logger_decorator - INFO     - → add gestartet mit args=(2, 3, 4, 4, 5), kwargs={}
+2025-12-16 13:54:13,867 - day_5_logs.logger_decorator - INFO     - ← add beendet, Ergebnis=18
+2025-12-16 13:54:13,867 - day_5_logs.logger_decorator - INFO     - → divide gestartet mit args=(4, 0), kwargs={}
+2025-12-16 13:54:13,867 - day_5_logs.logger_decorator - ERROR    - Fehler in divide: Division by 0 is forbidden
+Traceback (most recent call last):
+  File "/Users/paulvogt/python/exercises/week1/day_5_logs/logger_decorator.py", line 12, in wrapper
+    result = func(*args, **kwargs)
+  File "/Users/paulvogt/python/exercises/week1/day_5_my_math/math_utils.py", line 57, in divide
+    raise Exception("Division by 0 is forbidden")
+Exception: Division by 0 is forbidden
+2025-12-16 13:54:13,867 - root     - ERROR    - Division by 0 is forbidden
+Traceback (most recent call last):
+  File "/var/folders/px/73cs5v9j0dzgd0f2x5g_6lcc0000gn/T/ipykernel_68354/2471159298.py", line 20, in <module>
+    print(math.divide(4,0))
+          ~~~~~~~~~~~^^^^^
+  File "/Users/paulvogt/python/exercises/week1/day_5_logs/logger_decorator.py", line 12, in wrapper
+    result = func(*args, **kwargs)
+  File "/Users/paulvogt/python/exercises/week1/day_5_my_math/math_utils.py", line 57, in divide
+    raise Exception("Division by 0 is forbidden")
+Exception: Division by 0 is forbidden
+2025-12-16 13:54:13,868 - root     - INFO     - ended          
