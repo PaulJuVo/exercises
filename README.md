@@ -30,6 +30,7 @@ WEEK 2
   - Properties
   - Dataclasses (wichtiger!)
 - day 3: Projectstructures Data Engineering
+  - Unit Tests
 - day 4: ERROR Handling and Logging (Advanced)
 - day 5: File I/O Deep Dive
 - day 6: CLI-Tools (argparse)
