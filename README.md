@@ -1,9 +1,8 @@
 This is a demo repository to work on specific data engineering skills. Mainly idiomatic python, NumPy, Pandas, PySpark and dbt.
 
 create virtual env
-paulvogt@eduroamnat176-234 exercises % python3 -m venv venv
-paulvogt@eduroamnat176-234 exercises % source venv/bin/activate
-(venv) paulvogt@eduroamnat176-234 exercises %
+python3 -m venv venv
+source venv/bin/activate
 
 ## TABLE OF CONTENT
 

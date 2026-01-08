@@ -1,4 +1,4 @@
-from PIL import Image
+from PIL import Image, ImageOps
 import pillow_avif
 import os
 from pathlib import Path
@@ -36,7 +36,12 @@ for jpg_path in Path(input_dir).glob("*.JPG"):
 
     # 2️⃣ Skalierte Versionen
     for w, h in sizes:
-        resized = img.resize((w, h), Image.Resampling.LANCZOS)
+        resized = ImageOps.fit(
+            img,
+            (w, h),
+            method=Image.Resampling.LANCZOS,
+            centering=(0.5, 0.5)
+        )
         resized.save(
             f"{output_dir}/{index}-{w}x{h}.avif",
             format="AVIF",
